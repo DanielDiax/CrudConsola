@@ -45,7 +45,7 @@ class DAO():
                 print(
                     "Error al intentar la conexión de la creación de citas: {0}".format(ex))
 
-    def actualizarCurso(self, cita):
+    def actualizarCita(self, cita):
         if self.conexion.is_connected():
             try:
                 cursor = self.conexion.cursor()
@@ -58,7 +58,7 @@ class DAO():
                 print(
                     "Error al intentar la conexión de la modificación de cita: {0}".format(ex))
 
-    def eliminarCurso(self, IdClienteEliminar):
+    def eliminarCita(self, IdClienteEliminar):
         if self.conexion.is_connected():
             try:
                 cursor = self.conexion.cursor()

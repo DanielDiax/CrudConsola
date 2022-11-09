@@ -17,7 +17,7 @@ def pedirDatosRegistro():
     # Se valida la información que habra en el servicio.
     IdClienteCorrecto = False
     while (not IdClienteCorrecto):
-        idCliente = input("Ingrese código: ")
+        idCliente = input("Ingrese Id del cliente: ")
         if len(idCliente) == 6:
             IdClienteCorrecto = True
         else:
