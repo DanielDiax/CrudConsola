@@ -59,7 +59,7 @@ def ejecutarOpcion(opcion):
             cita = funciones.pedirDatosActualizacion(citas)
             print(cita)
             if cita:
-                dao.actualizarCurso(cita)
+                dao.actualizarCita(cita)
             else:
                 print("Id de cita a actualizar no encontrado...\n")
         else:
@@ -71,7 +71,7 @@ def ejecutarOpcion(opcion):
             if len(citas) > 0:
                 IdEliminar = funciones.pedirDatosEliminacion(citas)
                 if not (IdEliminar == ""):
-                    dao.eliminarCurso(IdEliminar)
+                    dao.eliminarCita(IdEliminar)
                 else:
                     print("Id de cita no encontrado...\n")
             else:

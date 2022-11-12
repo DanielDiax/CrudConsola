@@ -76,7 +76,7 @@ def pedirDatosRegistro():
 def pedirDatosActualizacion(citas):
     listarCitas(citas)
     existeCliente = False
-    idCliente = input("Ingrese el código del curso a editar: ")
+    idCliente = input("Ingrese el código de la cita a editar: ")
     for cit in citas:
         if cit[0] == idCliente:
             existeCliente = True
